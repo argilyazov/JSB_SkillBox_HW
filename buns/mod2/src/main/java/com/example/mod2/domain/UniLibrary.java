@@ -11,13 +11,13 @@ import java.util.List;
 public class UniLibrary implements Library{
     private List<String> authors = new ArrayList<>();
     @Override
-    public void getBook() {
-        System.out.println("Взяли книгу");
+    public void getBook(Book book) {
+        System.out.println("Взяли книгу"+book);
     }
 
     @Override
-    public void returnBook() {
-        System.out.println("Вернули книгу");
+    public void returnBook(Book book) {
+        System.out.println("Вернули книгу"+book);
     }
 
     @Override
